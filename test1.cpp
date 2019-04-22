@@ -65,3 +65,18 @@ int main()
             }
         {
         }
+        
+           
+            if(temp[i] <= time_quantum && temp[i] > 0)// time quantum 
+            {
+                  total = total + temp[i];
+                  temp[i] = 0;
+                  counter = 1;
+            }
+           
+            else if(temp[i] > 0)
+            {
+                  temp[i] = temp[i] - time_quantum;
+                  total = total + time_quantum;
+            }
+ 
